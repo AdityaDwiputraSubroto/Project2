@@ -4,9 +4,7 @@
  */
 package geometriLingkaran;
 
-class Tabung extends Lingkaran{
-    private double luasTabung;
-    private double volumeTabung;
+class Tabung extends BangunRuang{
     private double tinggi = 5;
     
     public Tabung(double tinggi){
@@ -19,13 +17,13 @@ class Tabung extends Lingkaran{
         this.tinggi = tinggi;
     }
 
-    public double hitungLuasTabung(){
-        this.luasTabung = 2*super.luasLingkaran + super.kelilingLingkaran*tinggi;
-        return this.luasTabung; 
+    public double hitungLuasRuang(){
+        super.setLuas(2*super.getLuasLingkaran() + super.kelilingLingkaran*tinggi);
+        return super.getLuas();
     }
 
-    public double hitungVolumeTabung() {
-        this.luasTabung = super.luasLingkaran * this.tinggi;
-        return this.volumeTabung; 
+    public double hitungVolumeRuang() {
+        super.setVolume(super.getLuasLingkaran() * this.tinggi);
+        return super.getVolume();
     }
 }

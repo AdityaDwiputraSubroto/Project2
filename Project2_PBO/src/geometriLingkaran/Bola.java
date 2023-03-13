@@ -8,35 +8,22 @@ package geometriLingkaran;
  *
  * @author LENOVO
  */
-class Bola extends BangunRuang{
-//    private double luasbola;
-//    private double volumebola;
-    
-    public Bola(double tinggi){
+public class Bola extends BangunRuang {
+    public Bola() {
         super(4);
     }
-    
-    public Bola(double tinggi, double jari){
+
+    public Bola(double jari) {
         super(jari);
     }
 
-//    public double hitungLuasBola(){
-//        this.luasbola = 4 * Lingkaran.PI * super.r * super.r;
-//        return this.luasbola; 
-//    }
-//
-//    public double hitungVolumeBola() {
-//        this.volumebola = (4/3) * Lingkaran.PI * super.r * super.r * super.r;
-//        return this.volumebola;
-//    }
-    
-    public double HitungLuasPermukaan(){
-        super.luasbola = 4 * Lingkaran.PI * super.r * super.r;
-        return super.luasbola; 
+    public double hitungLuasRuang() {
+        super.setLuas(4 * Lingkaran.PI * super.r * super.r);
+        return super.getLuas();
     }
 
-    public double getVolumeRuang() {
-        super.volumebola = (4/3) * Lingkaran.PI * super.r * super.r * super.r;
-        return super.volumebola;
+    public double hitungVolumeRuang() {
+        super.setVolume((4 * (Lingkaran.PI * super.r * super.r * super.r))/3);
+        return super.getVolume();
     }
 }

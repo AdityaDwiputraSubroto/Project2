@@ -17,10 +17,8 @@ public class Lingkaran {
     }
 
     public double getLuasLingkaran() {
-         this.luasLingkaran = PI * this.r * this.r;
-         return luasLingkaran;
-        // this.luasLingkaran = ;
-        // return PI * this.r * this.r;
+        this.luasLingkaran = PI * this.r * this.r;
+        return luasLingkaran;
     }
     
     public double getKelilingLingkaran(){
@@ -28,4 +26,3 @@ public class Lingkaran {
         return kelilingLingkaran;
     }
 }
-

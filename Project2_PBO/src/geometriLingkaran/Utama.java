@@ -11,30 +11,57 @@ package geometriLingkaran;
 public class Utama {
     public static void main(String[] args) {
         System.out.println("TABUNG");
-        Tabung cekson = new Tabung(5);
-        double wew = cekson.hitungLuasTabung();
-        Tabung cekson2 = new Tabung(5, 2);
-        double wew2 = cekson2.hitungLuasTabung();
+        Tabung cekson = new Tabung(10);
+        double wew = cekson.hitungLuasRuang();
+        double wow = cekson.hitungVolumeRuang();
         
         System.out.println("Luas = " + wew);
-        System.out.println("Luas 2 = " + wew2);
+        System.out.println("Volume = " + wow);
         
         System.out.println();
         System.out.println("BOLA");
         Bola coksen = new Bola(5);
-        double wow = coksen.hitungLuasBola();
-        Bola coksen2 = new Bola(5, 2);
-        double wow2 = coksen2.hitungLuasBola();
-        System.out.println("Luas = " + wow);
-        System.out.println("Luas 2 = " + wow2);
+        double wew2 = coksen.hitungLuasRuang();
+        double wow2 = coksen.hitungVolumeRuang();
+
+        System.out.println("Luas = " + wew2);
+        System.out.println("Volume = " + wow2);
         
         System.out.println();
         System.out.println("KERUCUT");
-        Kerucut cekcek = new Kerucut(5);
-        double www = cekcek.hitungLuasKerucut();
-        Kerucut cekcek2 = new Kerucut(5, 2);
-        double www2 = cekcek2.hitungLuasKerucut();
-        System.out.println("Luas = " + www);
-        System.out.println("Luas 2 = " + www2);
+        Kerucut cekcek = new Kerucut(10,5);
+        double wew3 = cekcek.hitungLuasRuang();
+        double wow3 = cekcek.hitungVolumeRuang();
+
+        System.out.println("Luas = " + wew3);
+        System.out.println("Volume = " + wow3);
+        
+        System.out.println("KERUCUT TERPANCUNG");
+        KerucutTerpancung terpancung = new KerucutTerpancung(10,5,3,2);
+       
+
+        System.out.println("Luas = " + terpancung.hitungLuasRuang());
+        System.out.println("Volume = " + terpancung.hitungVolumeRuang());
+        
+        System.out.println("KERATAN BOLA");
+        KeratanBola keratan = new KeratanBola(10,5);
+       
+
+        System.out.println("Luas = " + keratan.hitungLuasRuang());
+        System.out.println("Volume = " + keratan.hitungVolumeRuang());
+        
+         System.out.println("JURING");
+        Juring juring = new Juring(10,90);
+       
+
+        System.out.println("Luas = " + juring.hitungLuasJuring());
+        System.out.println("Keliling = " + juring.hitungKelilingJuring());
+        
+         System.out.println("TEMBERENG");
+        Tembereng tembereng = new Tembereng(5,7,10,90);
+       
+
+        System.out.println("Luas = " + tembereng.hitungLuasTembereng());
+        System.out.println("Keliling = " + tembereng.hitungKelilingTembereng());
     }
 }
